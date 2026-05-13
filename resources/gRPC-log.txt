@@ -1,0 +1,15 @@
+[2026-05-13T17:48:10.102Z] [ERROR] [BillingSvc] gRPC call to InvoiceProcessor.SubmitBatch failed: rpc error: code = DeadlineExceeded desc = context deadline exceeded
+[2026-05-13T17:48:10.105Z] [WARN] [BillingSvc] Payload size (bytes): 658402, attempt: 1/5, initiating retry in 500ms...
+[2026-05-13T17:48:10.608Z] [INFO] [BillingSvc] Retrying InvoiceProcessor.SubmitBatch (correlation_id: 8f9a2b1c-4d5e-6f7a)
+[2026-05-13T17:48:15.612Z] [ERROR] [BillingSvc] gRPC call to InvoiceProcessor.SubmitBatch failed: rpc error: code = DeadlineExceeded desc = context deadline exceeded
+[2026-05-13T17:48:15.615Z] [WARN] [BillingSvc] Payload size (bytes): 658402, attempt: 2/5, initiating retry in 1000ms...
+[2026-05-13T17:48:16.618Z] [INFO] [BillingSvc] Retrying InvoiceProcessor.SubmitBatch (correlation_id: 8f9a2b1c-4d5e-6f7a)
+[2026-05-13T17:48:21.625Z] [ERROR] [BillingSvc] gRPC call to InvoiceProcessor.SubmitBatch failed: rpc error: code = DeadlineExceeded desc = context deadline exceeded
+[2026-05-13T17:48:21.628Z] [WARN] [BillingSvc] Payload size (bytes): 658402, attempt: 3/5, initiating retry in 2000ms...
+[2026-05-13T17:48:23.632Z] [INFO] [BillingSvc] Retrying InvoiceProcessor.SubmitBatch (correlation_id: 8f9a2b1c-4d5e-6f7a)
+[2026-05-13T17:48:28.640Z] [ERROR] [BillingSvc] gRPC call to InvoiceProcessor.SubmitBatch failed: rpc error: code = DeadlineExceeded desc = context deadline exceeded
+[2026-05-13T17:48:28.643Z] [WARN] [BillingSvc] Payload size (bytes): 658402, attempt: 4/5, initiating retry in 4000ms...
+[2026-05-13T17:48:32.648Z] [INFO] [BillingSvc] Retrying InvoiceProcessor.SubmitBatch (correlation_id: 8f9a2b1c-4d5e-6f7a)
+[2026-05-13T17:48:37.655Z] [ERROR] [BillingSvc] gRPC call to InvoiceProcessor.SubmitBatch failed: rpc error: code = DeadlineExceeded desc = context deadline exceeded
+[2026-05-13T17:48:37.658Z] [FATAL] [BillingSvc] Max retries reached for correlation_id: 8f9a2b1c-4d5e-6f7a. Dropping payload to DLQ.
+[2026-05-13T17:48:37.701Z] [ERROR] [BillingSvc] Circuit breaker 'InvoiceProcessor' tripped to OPEN state.

@@ -1,0 +1,9 @@
+root@rabbitmq-node-01:/# rabbitmqctl list_queues name messages memory
+Timeout: 60.0 seconds ...
+Listing queues for vhost / ...
+name    messages        memory
+billing_queue   1485920 6245892100
+billing_queue_dlq       2450    8504000
+auth_events     12      45000
+notification_queue      0       12000
+invoice_gen_queue       84500   315000000

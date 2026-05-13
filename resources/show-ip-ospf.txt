@@ -1,0 +1,27 @@
+Core-Router-A# show ip ospf neighbor
+
+Neighbor ID     Pri   State           Dead Time   Address         Interface
+10.255.255.2    1     EXSTART/BDR     00:00:32    10.254.1.2      GigabitEthernet0/1
+10.255.255.3    1     FULL/DR         00:00:38    10.254.2.2      GigabitEthernet0/2
+
+Core-Router-A# show ip ospf interface GigabitEthernet0/1
+GigabitEthernet0/1 is up, line protocol is up
+  Internet Address 10.254.1.1/30, Area 0, Attached via Network Statement
+  Process ID 1, Router ID 10.255.255.1, Network Type BROADCAST, Cost: 1
+  Topology-MTID    Cost    Disabled    Shutdown      Topology Name
+        0           1         no          no            Base
+  Transmit Delay is 1 sec, State DR, Priority 1
+  Designated Router (ID) 10.255.255.1, Interface address 10.254.1.1
+  Backup Designated router (ID) 10.255.255.2, Interface address 10.254.1.2
+  Timer intervals configured, Hello 10, Dead 40, Wait 40, Retransmit 5
+    oob-resync timeout 40
+    Hello due in 00:00:08
+  Supports Link-local Signaling (LLS)
+  Cisco NSF helper support enabled
+  IETF NSF helper support enabled
+  Index 1/1/1, flood queue length 0
+  Next 0x0(0)/0x0(0)/0x0(0)
+  Last flood scan length is 1, maximum is 2
+  Last flood scan time is 0 msec, maximum is 1 msec
+  Neighbor Count is 1, Adjacent neighbor count is 0
+    Suppress hello for 0 neighbor(s)
