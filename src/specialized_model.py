@@ -1,7 +1,7 @@
 from openai import OpenAI
 from pydantic import ValidationError
 
-from response_formats import DifferentiationManifest, RemediationAction
+from src.response_formats import DifferentiationManifest, RemediationAction
 
 class SpecializedModel:
     def __init__(self, openai_model: str, api_key: str, evolution_manifest: DifferentiationManifest):

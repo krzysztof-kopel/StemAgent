@@ -4,13 +4,13 @@ from openai import OpenAI
 from pydantic import ValidationError
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
-from response_formats import DifferentiationManifest
-from specialized_model import SpecializedModel
-from tools import format_tools
+from src.response_formats import DifferentiationManifest
+from src.specialized_model import SpecializedModel
+from src.tools import format_tools
 
 class Settings(BaseSettings):
     openai_api_key: str
-    model_config = SettingsConfigDict(env_file="../.env", env_file_encoding="utf-8")
+    model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8")
 
 class StemModel:
     def __init__(self, openai_model: str, api_key: str):
