@@ -8,7 +8,7 @@ An AI agent with evolutionary features. Able to adapt to a task and find the pre
 - resources - logs used for the demonstration of agent's capabilities.
 
 ## Project set-up
-1. Copy this repository on your computer.
+1. Copy this repository to your computer.
 2. Create an .env file with your own OpenAI API key (in a format consistent with .env.example).
 3. Install the necessary dependencies (preferably using uv).
 4. Follow the example presented in demo.ipynb to make the agent evolve.
