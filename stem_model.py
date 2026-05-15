@@ -48,7 +48,7 @@ class StemModel:
                         {"role": "user", "content": context}
                     ],
                     response_format=DifferentiationManifest,
-                    temperature=0 # I want to keep the model as deterministic as possible at this stage
+                    temperature=0 # I want to keep the model as deterministic as possible
                 )
 
                 manifest = response.choices[0].message.parsed
